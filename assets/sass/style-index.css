@@ -9,7 +9,7 @@ html > body {
 
 .hero {
   width: 100%;
-  height: 700px;
+  height: 870px;
   background-image: url("../img/hero-background.webp");
   background-size: cover;
   background-position: center;
@@ -119,6 +119,39 @@ header > nav {
   background-color: white;
   border-right: 1px solid black;
   border-left: 1px solid black;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+}
+.container-main > .container-column-left {
+  width: 30%;
+  height: 500px;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-main > .container-column-left > .left-up, .container-main > .container-column-left .left-down {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid black;
+}
+.container-main .container-column-right {
+  width: 70%;
+  height: 500px;
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-main .container-column-right > .right-up, .container-main .container-column-right .right-down {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 768px) {
