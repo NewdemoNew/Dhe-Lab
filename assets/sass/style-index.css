@@ -7,6 +7,24 @@ html > body {
   padding: 0px;
 }
 
+.first-line {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #36393B;
+  display: flex;
+  justify-content: end;
+}
+.first-line > .container-social {
+  position: relative;
+  margin-right: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+.first-line > .container-social > .social img {
+  height: 2rem;
+}
+
 .hero {
   width: 100%;
   height: 870px;
@@ -43,7 +61,7 @@ header > nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-right: 100px;
+  margin-right: 20%;
   height: 100%;
   width: 40%;
 }
@@ -61,15 +79,16 @@ header > nav {
   box-sizing: content-box;
   text-decoration: none;
   color: var(--text-green);
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
   font-family: "Arial", sans-serif;
-  padding: 10px;
+  padding: 5px;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
   transition: background-color 0.3s, color 0.3s;
 }
 .nav-container > .nav-links > li > a:hover {
+  color: rgb(108, 129, 219);
   background-color: white;
   border-right: 1px solid black;
   border-left: 1px solid black;
@@ -122,36 +141,15 @@ header > nav {
 }
 
 .container-main {
+  width: 100%;
+  height: 70%;
+  background-color: rgb(247, 247, 247);
   display: flex;
   flex-direction: row;
 }
 .container-main > .container-column-left {
-  width: 30%;
-  height: 500px;
-  border: solid black 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container-main > .container-column-left > .left-up, .container-main > .container-column-left .left-down {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(247, 247, 247);
-  border: 1px solid black;
-}
-.container-main .container-column-right {
-  width: 70%;
-  height: 500px;
-  border: solid black 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container-main .container-column-right > .right-up, .container-main .container-column-right .right-down {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(247, 247, 247);
-  border: 1px solid black;
+  height: 100%;
+  width: 20%;
 }
 
 @media screen and (max-width: 768px) {
