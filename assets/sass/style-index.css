@@ -211,9 +211,10 @@ header > nav {
   position: relative;
 }
 .passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div2 > .scroll-inner2 {
+  height: 700%;
   display: flex;
   flex-direction: column;
-  /* durata/temporizzazione: regola a piacere */
+  gap: 0;
   animation: scrollVertical 13s linear infinite;
   will-change: transform;
 }
@@ -224,6 +225,51 @@ header > nav {
      object-fit: contain;
   display: block;
 }
+.passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div3 {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div3 > .scroll-inner3 {
+  width: 1000%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  animation: scrollHorizontal 20s linear infinite;
+  will-change: transform;
+}
+.passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div3 > .scroll-inner3 > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div4 {
+  height: 100%;
+  width: 100%;
+}
+.passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div4 > img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.passion1 > .container-col-p1 > .column-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.passion1 > .container-col-p1 > .column-right > .card-p1 {
+  border: solid 1px black;
+}
+.passion1 > .container-col-p1 > .column-right > .c1 {
+  background-color: #AFD0D6;
+  width: 20px;
+}
+
 @keyframes scrollVertical {
   0% {
     transform: translateY(0);
@@ -253,34 +299,41 @@ header > nav {
     transform: translateY(-50%);
   }
 }
-.passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div3 {
-  height: 100%;
-  width: 100%;
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-10%);
+  }
+  20% {
+    transform: translateX(-20%);
+  }
+  30% {
+    transform: translateX(-30%);
+  }
+  40% {
+    transform: translateX(-40%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  60% {
+    transform: translateX(-60%);
+  }
+  70% {
+    transform: translateX(-70%);
+  }
+  80% {
+    transform: translateX(-80%);
+  }
+  90% {
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-.passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div4 {
-  height: 100%;
-  width: 100%;
-}
-.passion1 > .container-col-p1 > .column-left > .container-grid > .parent > .div4 > img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-}
-.passion1 > .container-col-p1 > .column-right {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.passion1 > .container-col-p1 > .column-right > .card-p1 {
-  border: solid 1px black;
-}
-.passion1 > .container-col-p1 > .column-right > .c1 {
-  background-color: #AFD0D6;
-  width: 20px;
-}
-
 .passion2 {
   margin-top: 200px;
   height: 700px;

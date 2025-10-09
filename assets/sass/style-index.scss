@@ -225,12 +225,14 @@ header > nav{
                             position: relative;
                             
                             >.scroll-inner2{
+                                height: calc(100%*7);
                                 display: flex;
                                 flex-direction: column;
-                                /* durata/temporizzazione: regola a piacere */
+                                gap:0;
                                 animation: scrollVertical 13s linear infinite;
                                 will-change: transform;
                             >img{
+                               
                                 width: 100%;
                                 height: auto;
                                 object-fit: contain;
@@ -238,26 +240,33 @@ header > nav{
                             }
                         }
                     }
-                        @keyframes scrollVertical {
-                          0%    { transform: translateY(0); }
-                          17.5% { transform: translateY(0); } /*pausa tra una e l altra*/
-                          25%   { transform: translateY(-12.5%); }       
-                        //    foto2
-                          42.5% { transform: translateY(-12.5%); }      
-                          50%   { transform: translateY(-25%); }        
-                        //    foto3
-                          67.5% { transform: translateY(-25%); }       
-                          75%   { transform: translateY(-37.5%); }      
-                        //    foto4
-                          92.5% { transform: translateY(-37.5%); }      
-                          100%  { transform: translateY(-50%); }        
-                        }
+                       
 
                         >.div3 {
                             height: 100%;
                             width: 100%;
-                            
+                            overflow: hidden;
+                            position: relative;
+
+                            > .scroll-inner3 {
+                                width: calc(100% * 10);
+                                display: flex;
+                                flex-direction: row;
+                                gap:0;
+                                animation: scrollHorizontal 20s linear infinite;
+                                will-change: transform;
+                            > img{
+                                        
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    display: block;                          
+                                  
                         }
+                    }
+                }
+
+                
 
                         >.div4 {
                             height: 100%;
@@ -290,7 +299,39 @@ header > nav{
                 }
             }
         }
- 
+ @keyframes scrollVertical {
+                          0%    { transform: translateY(0); }
+                          17.5% { transform: translateY(0); } /*pausa tra una e l altra*/
+                          25%   { transform: translateY(-12.5%); }       
+                        //    foto2
+                          42.5% { transform: translateY(-12.5%); }      
+                          50%   { transform: translateY(-25%); }        
+                        //    foto3
+                          67.5% { transform: translateY(-25%); }       
+                          75%   { transform: translateY(-37.5%); }      
+                        //    foto4
+                          92.5% { transform: translateY(-37.5%); }      
+                          100%  { transform: translateY(-50%); }        
+                        }
+                        
+             @keyframes scrollHorizontal {
+                  0%    { transform: translateX(0); }
+    10%   { transform: translateX(-10%); }
+    20%   { transform: translateX(-20%); }
+    30%   { transform: translateX(-30%); }
+    40%   { transform: translateX(-40%); }
+    50%   { transform: translateX(-50%); }
+    60%   { transform: translateX(-60%); }
+    70%   { transform: translateX(-70%); }
+    80%   { transform: translateX(-80%); }
+    90%   { transform: translateX(-90%); }
+    100%  { transform: translateX(-100%); }
+                }           
+
+
+
+
+
         // PASSIONE 2
 .passion2{
         margin-top: 200px;
