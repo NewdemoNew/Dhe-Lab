@@ -210,26 +210,63 @@ header > nav{
                     grid-row-gap: 0px;
     
                         >.div1 {
-                            border: solid 2px green;
+                            height: 100%;
+                            width: 100%;
                             >img{
                                 width: 100%;
                                 height:100%;
                                 max-width: 100%;
                             }
                         }
-
                         >.div2 {
-                            border: solid 2px green;
+                            overflow: hidden;
+                            height: 100%;
+                            width: 100%;
+                            position: relative;
                             
+                            >.scroll-inner2{
+                                display: flex;
+                                flex-direction: column;
+                                /* durata/temporizzazione: regola a piacere */
+                                animation: scrollVertical 13s linear infinite;
+                                will-change: transform;
+                            >img{
+                                width: 100%;
+                                height: auto;
+                                object-fit: contain;
+                                display: block;
+                            }
+                        }
+                    }
+                        @keyframes scrollVertical {
+                          0%    { transform: translateY(0); }
+                          17.5% { transform: translateY(0); } /*pausa tra una e l altra*/
+                          25%   { transform: translateY(-12.5%); }       
+                        //    foto2
+                          42.5% { transform: translateY(-12.5%); }      
+                          50%   { transform: translateY(-25%); }        
+                        //    foto3
+                          67.5% { transform: translateY(-25%); }       
+                          75%   { transform: translateY(-37.5%); }      
+                        //    foto4
+                          92.5% { transform: translateY(-37.5%); }      
+                          100%  { transform: translateY(-50%); }        
                         }
 
                         >.div3 {
-                            border: solid 2px green;
+                            height: 100%;
+                            width: 100%;
                             
                         }
 
                         >.div4 {
-                            border: solid 2px green;
+                            height: 100%;
+                            width: 100%;
+                            >img{
+                                width: 100%;
+                                height:100%;
+                                max-width: 100%;
+                            }
                             
                         }
                     }
