@@ -14,6 +14,8 @@ html{
     scroll-behavior: smooth;
 
     >body{
+        background-attachment: fixed;
+        background-image: url("../img/sfondo-body.png");
     margin:0;
     padding:0px;
     }
@@ -34,6 +36,7 @@ html{
 
         >.social img{
             height: 2rem;
+            margin-right: 5px;
         }
     }
 }
@@ -172,6 +175,7 @@ header > nav{
 
     // passione 1
 .passion1{
+    margin-top: 200px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -228,8 +232,6 @@ header > nav{
                             border: solid 2px green;
                             
                         }
-
-                        
                     }
                 }
             }
@@ -251,8 +253,11 @@ header > nav{
                 }
             }
         }
-    
+ 
+        // PASSIONE 2
 .passion2{
+        margin-top: 200px;
+
     height: 700px;
     width: 100%;
     background-color:$color-3;
@@ -271,11 +276,14 @@ header > nav{
                     width: 100%;
                     height: 40%;
                 }
-
     }
 
 }
+
+// PASSIONE 3
 .passion3{
+        margin-top: 200px;
+
     height: 700px;
     width: 100%;
     background-color: $color-4;

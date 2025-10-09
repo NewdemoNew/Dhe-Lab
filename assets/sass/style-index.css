@@ -3,6 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 html > body {
+  background-attachment: fixed;
+  background-image: url("../img/sfondo-body.png");
   margin: 0;
   padding: 0px;
 }
@@ -23,6 +25,7 @@ html > body {
 }
 .first-line > .container-social > .social img {
   height: 2rem;
+  margin-right: 5px;
 }
 
 .hero {
@@ -158,6 +161,7 @@ header > nav {
 }
 
 .passion1 {
+  margin-top: 200px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -224,6 +228,7 @@ header > nav {
 }
 
 .passion2 {
+  margin-top: 200px;
   height: 700px;
   width: 100%;
   background-color: #AFD0D6;
@@ -246,6 +251,7 @@ header > nav {
 }
 
 .passion3 {
+  margin-top: 200px;
   height: 700px;
   width: 100%;
   background-color: #D0C8CC;
