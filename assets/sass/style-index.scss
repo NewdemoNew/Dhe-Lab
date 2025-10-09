@@ -1,12 +1,12 @@
 /* variabili colore */
-$text-color:blue;
+
 $back-color:rgb(247 247 247);
 $main-font:inter, sans-serif;
 $color-1:#36393B;
 $color-2:#EBF6FF;
 $color-3:#AFD0D6;
 $color-4:#D0C8CC;
-$card-cap-bg:rgba(var(--#{$color-1}body-color-rgb), .03);
+
 
 
 
@@ -174,6 +174,8 @@ header > nav{
 
 
     // passione 1
+
+
 .passion1{
     margin-top: 200px;
     height: 100%;
@@ -198,7 +200,8 @@ header > nav{
                     >.container-grid{
                         width: 40%;
                         height: 50%;
-                        border: solid 2px red;
+                        border: solid 11px $color-2;
+                        border-radius: 10px;
 
                 >.parent {
                     display:grid;
@@ -240,8 +243,6 @@ header > nav{
                             }
                         }
                     }
-                       
-
                         >.div3 {
                             height: 100%;
                             width: 100%;
@@ -261,13 +262,9 @@ header > nav{
                                     height: 100%;
                                     object-fit: cover;
                                     display: block;                          
-                                  
                         }
                     }
                 }
-
-                
-
                         >.div4 {
                             height: 100%;
                             width: 100%;
@@ -276,30 +273,102 @@ header > nav{
                                 height:100%;
                                 max-width: 100%;
                             }
-                            
                         }
                     }
                 }
             }
                 >.column-right{
+                    border-radius: 20px;
                     width: 70%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-
-
+                    >.row-up{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 85%;
                     >.card-p1{
-                        border: solid 1px black;
-                   }
-                   >.c1{
-                    background-color: $color-3;
-                    width: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 38%;
+                        width: 44%;
+                        background-color: $color-2;
+                        border-radius: 20px;
+                        color: $color-1;
+                        padding: 20px;
                    }
                 }
+                   >.row-down{
+                    height: 15%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: right;
+                    margin-right: 50px;
+                    align-items: center;
+
+                    // div nascosto per curiosità
+                    >.curiosity1 {
+                    display: block;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    z-index: 1001; /* Assicurati che sia sopra altri elementi */
+                    }
+                   
+                   >.c1{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $color-2;
+                    width: 72px;
+                    height: 72px;
+                    font-size: 45px;
+                    font-weight: bold;
+                    border-radius: 50%;
+                    border: solid 1px $color-1;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                    animation: pulse 1.5s infinite;
+                    // animation: rotate 1s infinite; questo lo tengo per dopo
+           
+                            }
+                        }
+                   }
             }
         }
- @keyframes scrollVertical {
+
+
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+@keyframes pulse {
+                      0% {
+                            transform: scale(1);
+                            box-shadow: 0 0 0 rgba(247, 247, 247, 0.3);
+                      }
+                      50% {
+                            transform: scale(1.3);
+                            box-shadow: 0 0 10px rgb(240, 234, 234);
+                      }
+                      100% {
+                            transform: scale(1);
+                            box-shadow: 0 0 0 rgba(245, 244, 244, 0.3);
+                }
+            }
+@keyframes scrollVertical {
                           0%    { transform: translateY(0); }
                           17.5% { transform: translateY(0); } /*pausa tra una e l altra*/
                           25%   { transform: translateY(-12.5%); }       
@@ -314,8 +383,8 @@ header > nav{
                           100%  { transform: translateY(-50%); }        
                         }
                         
-             @keyframes scrollHorizontal {
-                  0%    { transform: translateX(0); }
+@keyframes scrollHorizontal {
+    0%    { transform: translateX(0); }
     10%   { transform: translateX(-10%); }
     20%   { transform: translateX(-20%); }
     30%   { transform: translateX(-30%); }
