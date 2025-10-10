@@ -3,12 +3,9 @@ html {
   scroll-behavior: smooth;
 }
 html > body {
-  background-attachment: fixed;
-  background-image: url("../img/sfondo-body.png");
-  background-color: rgba(255, 255, 255, 0.8); /* Colore bianco semitrasparente */
-  background-blend-mode: lighten;
   margin: 0;
   padding: 0px;
+  background-color: rgba(0, 80, 133, 0.774);
 }
 
 .scroll-button {
@@ -580,6 +577,7 @@ header > nav {
   padding: 80px 100px 20px 100px;
   width: 68%;
   background-color: #36393B;
+  color: #EBF6FF;
   box-shadow: #222724 0px 4px 8px;
 }
 
@@ -640,7 +638,7 @@ header > nav {
 
 .contact > form > button:hover {
   background-color: white;
-  color: green;
+  color: #44b4ff;
 }
 
 footer {

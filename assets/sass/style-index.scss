@@ -1,5 +1,5 @@
 /* variabili colore e font */
-
+$background:rgba(0, 80, 133, 0.774);
 $back-color:rgb(247 247 247);
 $main-font:inter, sans-serif;
 $pixels:'Pixelify Sans', sans-serif;
@@ -14,12 +14,13 @@ html{
     scroll-behavior: smooth;
 
     >body{
-        background-attachment: fixed;
-        background-image: url("../img/sfondo-body.png");
-        background-color: rgba(255, 255, 255, 0.8); /* Colore bianco semitrasparente */
-        background-blend-mode: lighten;
+        // background-attachment: fixed;
+        // background-image: url("../img/sfondo-body.png");
+        // background-color: rgba(255, 255, 255, 0.8); /* Colore bianco semitrasparente */
+        // background-blend-mode: lighten;
     margin:0;
     padding:0px;
+    background-color: $background;
     }
 }
 // prova scroll to top
@@ -586,6 +587,7 @@ header > nav{
     padding:80px 100px 20px 100px;
     width: 68%;
     background-color: $color-1;
+    color:$color-2;
     box-shadow: #222724 0px 4px 8px;
 }
 
@@ -640,7 +642,7 @@ header > nav{
 }
 .contact > form > button:hover{
     background-color: white;
-    color: green;
+    color: $color-blue;
 }
 // FOOTER
 footer{
