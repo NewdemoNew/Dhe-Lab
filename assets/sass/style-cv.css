@@ -1,21 +1,107 @@
-.container {
+html {
+  scroll-behavior: smooth;
+  background-color: #F5F7FA;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F7FA;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  background-color: #F5F7FA;
+  margin-right: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 20%;
+  height: 100%;
+  width: 40%;
+}
+.nav-container > .nav-links {
+  margin-left: 45%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 50px;
+}
+.nav-container > .nav-links > li {
+  list-style: none;
+}
+.nav-container > .nav-links > li > a {
+  font-family: "inter", sans-serif;
+  box-sizing: content-box;
+  text-decoration: none;
+  color: #1E2A5E;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav-container > .nav-links > li > a:hover {
+  color: #3E8EDE;
+  background-color: white;
+  border-right: 1px solid #3E8EDE;
+  border-left: 1px solid #3E8EDE;
+}
+
+.nav-links > li:first-of-type > a {
+  color: #3E8EDE;
+}
+
+.container {
+  display: flex;
   height: 100%;
   width: 100%;
 }
 .container > .column-left {
-  border: solid rebeccapurple 10px;
+  background-color: #F5F7FA;
+  display: flex;
   height: 100%;
-  width: 35%;
+  width: 20%;
 }
-.container > .column-left > .list-container {
-  border: solid rgb(17, 3, 31) 11px;
+.container > .column-left > .container-list {
+  background-color: #F5F7FA;
+  position: fixed;
   height: 100%;
-  width: 100%;
+  width: 19%;
+}
+.container > .column-left > .container-list > ul li {
+  list-style: none;
+  font-family: "inter", sans-serif;
+  font-weight: bold;
+}
+.container > .column-left > .container-list > ul li > a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+  font-size: 1.5rem;
+}
+.container > .column-left > .container-list > ul li > a:hover {
+  color: #3E8EDE;
 }
 .container > .column-right {
-  border: solid rgb(17, 3, 31) 1px;
+  color: #1E2A5E;
+  border-left: solid 5px #A3A9B7;
   height: 100%;
-  width: 65%;
+  width: 52%;
+  padding: 30px;
+}
+
+.container > .column-left > .container-list > ul > li:first-of-type > a {
+  color: #3E8EDE;
+}
+
+.titolo {
+  color: #1E2A5E;
 }/*# sourceMappingURL=style-cv.css.map */

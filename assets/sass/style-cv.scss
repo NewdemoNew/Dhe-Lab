@@ -1,25 +1,120 @@
 
-.container{
+$main-font:"inter", sans-serif;
+$color-sfondo:#F5F7FA;
+$color-testi:#1E2A5E;
+$color-titoli:#1E2A5E;
+$color-puls:#3E8EDE;
+$color-bordo:#A3A9B7;
+
+html{
+    scroll-behavior: smooth;
+    background-color: $color-sfondo;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $color-sfondo;
+}
+nav{
+    height: 80px;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: $color-sfondo;
+    margin-right: 20px;
+    
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 20%;
+    height: 100%;
+    width: 40%;
+
+    >.nav-links{
+        margin-left: 45%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap:50px;
+    
+        >li{
+        list-style: none;
+       
+                >a{
+                font-family: $main-font;
+                box-sizing: content-box;
+                text-decoration: none;
+                color: $color-testi;
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 5px;
+                border-right: 1px solid transparent;
+                border-left: 1px solid transparent;
+                transition: background-color 0.3s, color 0.3s;
+                
+            
+            &:hover{ 
+                color: $color-puls;
+            background-color: white;
+            border-right: 1px solid $color-puls;
+            border-left: 1px solid $color-puls;
+            }
+            }
+        }
+    }
+}
+.nav-links > li:first-of-type > a {
+    color: $color-puls;
+}
+
+
+.container{
+    display: flex;
     height: 100%;
     width: 100%;
-
-        >.column-left{
-        border: solid rebeccapurple 10px;
-        height: 100%;
-        width: 35%;
-            >.list-container{
-                border: solid rgb(17, 3, 31) 11px;
-                height: 100%;
-                width: 100%;
-                
-            }
-            }
-        >.column-right{
-             border: solid rgb(17, 3, 31) 1px;
+    
+         >.column-left{
+            background-color: $color-sfondo;
+            display: flex;
             height: 100%;
-            width: 65%;
-   
-    }
+            width: 20%;
+            >.container-list{
+                background-color: $color-sfondo;
+                position:fixed;
+                height: 100%;
+                width: 19%;
+                  >ul li{
+                    list-style: none;
+                    font-family: $main-font;
+                    font-weight: bold;
+                      >a{
+                          text-decoration: none;
+                          color: black;
+                          transition: color 0.3s;
+                          font-size: 1.5rem;
+                        
+                        &:hover{
+                            color: $color-puls;
+                        }
+                  }
+
+                }
+            }
+         }
+            >.column-right{
+                color: $color-testi;
+                border-left: solid 5px $color-bordo;
+                height: 100%;
+                width: 52%;
+                padding: 30px;
+            }
+        }
+
+.container > .column-left> .container-list > ul > li:first-of-type > a{
+    color: $color-puls;
+}
+.titolo{
+    color: $color-titoli;
 }
