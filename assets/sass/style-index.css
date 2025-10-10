@@ -5,6 +5,8 @@ html {
 html > body {
   background-attachment: fixed;
   background-image: url("../img/sfondo-body.png");
+  background-color: rgba(255, 255, 255, 0.8); /* Colore bianco semitrasparente */
+  background-blend-mode: lighten;
   margin: 0;
   padding: 0px;
 }
@@ -225,18 +227,19 @@ header > nav {
   flex-direction: row;
 }
 .passion1 > .container-col-p1 {
-  background-color: #AFD0D6;
   width: 100%;
   height: 700px;
   display: flex;
   flex-direction: row;
 }
 .passion1 > .container-col-p1 > .column-left {
+  border-radius: 20px;
   background-color: #36393B;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 2%;
 }
 .passion1 > .container-col-p1 > .column-left > .container-grid {
   width: 40%;
@@ -316,61 +319,33 @@ header > nav {
 .passion1 > .container-col-p1 > .column-right {
   border-radius: 20px;
   width: 70%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.passion1 > .container-col-p1 > .column-right > .row-up {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 85%;
-}
-.passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 {
-  font-family: inter, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 38%;
-  width: 44%;
   background-color: #EBF6FF;
   border-radius: 20px;
-  color: #36393B;
-  padding: 20px;
 }
-.passion1 > .container-col-p1 > .column-right > .row-down {
-  height: 15%;
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  margin-right: 50px;
-  align-items: center;
-}
-.passion1 > .container-col-p1 > .column-right > .row-down > .curiosity1 {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  z-index: 1001; /* Assicurati che sia sopra altri elementi */
-}
-.passion1 > .container-col-p1 > .column-right > .row-down > .c1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.passion1 > .container-col-p1 > .column-right > .row-up {
   background-color: #EBF6FF;
-  width: 72px;
-  height: 72px;
-  font-size: 45px;
-  font-weight: bold;
-  border-radius: 50%;
-  border: solid 1px #36393B;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  animation: pulse 1.5s infinite;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87%;
+  height: 85%;
+}
+.passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > p {
+  font-family: inter, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 @keyframes rotate {
@@ -469,13 +444,15 @@ header > nav {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .passion2 > .container-col-p2 > .row-up {
   background-image: url(../img/sfondo-videogame2.jpg);
   background-size: cover;
   border: solid 1px black;
   width: 100%;
-  height: 60%;
+  height: 40%;
 }
 .passion2 > .container-col-p2 > .row-down {
   background-color: #D0C8CC;
@@ -483,28 +460,33 @@ header > nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 40%;
+  width: 70%;
+  height: 60%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .passion2 > .container-col-p2 > .row-down > .card-p2 {
+  text-align: center;
+}
+.passion2 > .container-col-p2 > .row-down > .card-p2 > h3, .passion2 > .container-col-p2 > .row-down > .card-p2 h4 {
   font-family: "Pixelify Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 38%;
-  width: 44%;
-  background-color: #EBF6FF;
-  border-radius: 20px;
-  color: #36393B;
-  padding: 20px;
+}
+.passion2 > .container-col-p2 > .row-down > .card-p2 > p {
+  font-family: "DM Serif Display", serif;
 }
 
 .passion3 {
   margin-top: 200px;
   height: 700px;
-  width: 100%;
+  width: 80%;
+  border-radius: 20px;
   background-color: #D0C8CC;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .passion3 > .container-col-p3 {
   height: 100%;
@@ -515,12 +497,53 @@ header > nav {
 .passion3 > .container-col-p3 > .column-left {
   height: 100%;
   width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.passion3 > .container-col-p3 > .column-left > .card-p3 {
+  text-align: center;
+  margin-left: 5%;
+}
+.passion3 > .container-col-p3 > .column-left > .card-p3 > h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.passion3 > .container-col-p3 > .column-left > .card-p3 > p {
+  font-family: inter, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 10px;
 }
 .passion3 > .container-col-p3 > .column-right {
-  background-image: url(../img/3d.jpg);
-  background-size: cover;
   height: 100%;
   width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.passion3 > .container-col-p3 > .column-right > .img-p3 {
+  width: 80%;
+  height: auto;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.passion3 > .container-col-p3 > .column-right > .img-p3 > img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 20px;
+}
+.passion3 > .container-col-p3 > .column-right > .img-p3-2 {
+  width: 80%;
+  height: auto;
+}
+.passion3 > .container-col-p3 > .column-right > .img-p3-2 > img {
+  width: 88%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
 }
 
 .contact-us {
@@ -533,11 +556,12 @@ header > nav {
 }
 
 .contact {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 100px;
   border-radius: 10px;
-  padding: 0px 100px 20px 100px;
-  width: 40%;
-  box-shadow: #2f563d 0px 4px 8px;
+  padding: 80px 100px 20px 100px;
+  width: 68%;
+  background-color: #36393B;
+  box-shadow: #222724 0px 4px 8px;
 }
 
 .contact > p {
