@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.container > .column-left {
+  border: solid rebeccapurple 10px;
+  height: 100%;
+  width: 35%;
+}
+.container > .column-left > .list-container {
+  border: solid rgb(17, 3, 31) 11px;
+  height: 100%;
+  width: 100%;
+}
+.container > .column-right {
+  border: solid rgb(17, 3, 31) 1px;
+  height: 100%;
+  width: 65%;
+}/*# sourceMappingURL=style-cv.css.map */
