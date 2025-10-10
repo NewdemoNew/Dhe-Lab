@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name ="author" content="Davide De Masi">
@@ -16,10 +16,15 @@
     <!-- font google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="first-line">
         <div class="container-social">
@@ -28,14 +33,9 @@
      <span class="social"><img src="assets/img/icons8-linkedin-d.png"></span> 
         </div>  
     </div>
-    <section class="hero">
+    <div class="hero">
     <header id ="home">
         <nav>
-            <span class="logo">
-            <a href="">
-            <img src="assets/img/Gemini_Generated_Image_7tiuom7tiuom7tiu.png" alt="logo piccolo firma" title="logo piccolo firma">
-            </a>
-        </span>
         <div class="nav-container">
             <ul class="nav-links">
                 <li><a href="#about">About Us</a></li>
@@ -61,22 +61,27 @@
       </header>
       <div class="container-main">
     <div class="container-column-left">
-    </div>
+        <div class="container-img">
+            <img src="assets/img/me.jpg" alt="Foto di Davide De Masi">
+        </div>
+        </div>
     <div class="container-column-right">
         <div class="card-main">
-  <div class="card-body">
-    <h5 class="card-title">Eccomi! Sono Davide.</h5>
-    <p class="card-text">Mi piace la tecnologia ed un sacco di altre cose. Ma soprattutto mi piacciono le cose vere.<br>Se ti va puoi scoprire chi sono attraverso le mia passioni. </p>
-    <button type="button" class="btn btn-secondary">Scopri</button>
-    <button type="button" class="btn btn-secondary">Oppure Contattami</button>
-  </div>
+            <div class="card-description">
+                <h2>Sono Davide, un appassionato di tecnologia e innovazione. 
+                    Amo esplorare nuove idee e trasformarle in progetti concreti.
+                    Benvenuto nel mio spazio creativo!
+                </h2>
+                <button class="btn"><a href="#1">Scopri di più</a></button>
+                <button class="btn"><a href="#contactme">Contattami subito</a></button>
+        </div>
 </div>
 </div>
-    </div>
+</div>
  </section>
 
 <!-- INIZIO PASSIONE 1 -->
- <section class="passion1">
+ <section class="passion1" id="1">
     <div class="container-col-p1">
 
         
@@ -130,7 +135,6 @@
                 
 
             <div class="c1">
-                
                 "?"
             </div>
             </div>
@@ -139,6 +143,7 @@
     </div>
  </section>
 <!-- FINE PASSIONE 1 -->
+ <!-- ------------------------------------------------------------------------------------------------------------------ -->
 <!-- INIZIO PASSIONE 2 -->
  <section class="passion2">
     <div class="container-col-p2">
@@ -147,13 +152,12 @@
         </div>
         <div class="row-down">
             <div class="card-p2">
-                <h3>La passione per il Mobile!</h3>
-                <p>La mia passione per la tecnologia è sempre stata a 360 gradi, ma il mobile occupa un posto speciale nel mio cuore</p>
-                <p>Dal lontano 2007, ho collezionato tantissimi prodotti.</p>
-                <p>Quanti bei ricordi!</p>
+                <h3>I VIDEOGIOCHI</h3>
+                <h4>(ovviamente...)</h4>
+                <p>I videogiochi mi appassionano fin da quando ero bambino! La mia prima console? Una stupenda Nintendo 8-Bit.</p>
             </div>
             <div class="c2">
-                <img src="assets/img/icons8-q.gif">
+                 "?"
             </div>
         </div>
     </div>
@@ -163,7 +167,11 @@
  <section class="passion3">
     <div class="container-col-p3">
         <div class="column-left">
-            
+            <div class="card-p3">
+                <h3>I VIDEOGIOCHI</h3>
+                <h4>(ovviamente...)</h4>
+                <p>I videogiochi mi appassionano fin da quando ero bambino! La mia prima console? Una stupenda Nintendo 8-Bit.</p>
+            </div>
         </div>
         <div class="column-right">
             
@@ -171,6 +179,22 @@
     </div>
  </section>
  <!-- FINE PASSIONE 3 -->
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+     <section class="contact-us" id="contactme">
+    <div class="contact" id="c-us">
+        <h2>Contattaci</h2>
+        <p>Se sei interessato a collaborare con noi o vuoi saperne di più sui nostri progetti, non esitare a contattarci. Insieme possiamo fare la differenza.</p>
+        <form action="#" method="post">
+        <label for="name">Nome</label>
+        <input type="text" name="name" placeholder="Inserisci il tuo nome" required maxlength="30">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Inserisci la tua email" required maxlength="50">
+        <label for="mex">Messaggio</label>
+        <textarea name="mex" placeholder="Lascia un breve messaggio..." required maxlength="300" rows="5"></textarea>
+        <button type="submit" class="btn">Invia</button>
+        </form>
+    </div>
+</section>
 <!-- INIZIO FOOTER -->
  <footer>
 

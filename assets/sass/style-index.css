@@ -76,20 +76,19 @@ header > nav {
   list-style: none;
 }
 .nav-container > .nav-links > li > a {
-  font-family: inter, sans-serif;
+  font-family: "DM Serif Display", serif;
   box-sizing: content-box;
   text-decoration: none;
-  color: var(--text-green);
+  color: #36393B;
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Arial", sans-serif;
   padding: 5px;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
   transition: background-color 0.3s, color 0.3s;
 }
 .nav-container > .nav-links > li > a:hover {
-  color: rgb(108, 129, 219);
+  color: #36393B;
   background-color: white;
   border-right: 1px solid black;
   border-left: 1px solid black;
@@ -149,18 +148,76 @@ header > nav {
   flex-direction: row;
 }
 .container-main > .container-column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-end;
   height: 100%;
-  width: 20%;
+  width: 50%;
+}
+.container-main > .container-column-left > .container-img {
+  width: 40%;
+  height: auto;
+}
+.container-main > .container-column-left > .container-img > img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10%;
 }
 .container-main > .container-column-right {
   height: 100%;
-  width: 80%;
+  width: 50%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
+}
+.container-main > .container-column-right > .card-main {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.container-main > .container-column-right > .card-main > .card-description {
+  text-align: left;
+  width: 70%;
+  padding: 20px;
+}
+.container-main > .container-column-right > .card-main > .card-description > h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: bolder;
+  color: #36393B;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.container-main > .container-column-right > .card-main > .card-description > .btn {
+  margin: 10px 10px 10px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #36393B;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container-main > .container-column-right > .card-main > .card-description > .btn > a {
+  text-decoration: none;
+  color: white;
+}
+.container-main > .container-column-right > .card-main > .card-description > .btn > a:hover {
+  color: #36393B;
 }
 
 .passion1 {
+  scroll-margin-top: 100px;
   margin-top: 200px;
   height: 100%;
   width: 100%;
@@ -272,6 +329,7 @@ header > nav {
   height: 85%;
 }
 .passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 {
+  font-family: inter, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -405,7 +463,6 @@ header > nav {
   margin-top: 200px;
   height: 700px;
   width: 100%;
-  background-color: #AFD0D6;
 }
 .passion2 > .container-col-p2 {
   height: 100%;
@@ -414,14 +471,33 @@ header > nav {
   flex-direction: column;
 }
 .passion2 > .container-col-p2 > .row-up {
+  background-image: url(../img/sfondo-videogame2.jpg);
+  background-size: cover;
   border: solid 1px black;
   width: 100%;
   height: 60%;
 }
 .passion2 > .container-col-p2 > .row-down {
-  border: solid 1px black;
+  background-color: #D0C8CC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40%;
+}
+.passion2 > .container-col-p2 > .row-down > .card-p2 {
+  font-family: "Pixelify Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 38%;
+  width: 44%;
+  background-color: #EBF6FF;
+  border-radius: 20px;
+  color: #36393B;
+  padding: 20px;
 }
 
 .passion3 {
@@ -441,9 +517,87 @@ header > nav {
   width: 60%;
 }
 .passion3 > .container-col-p3 > .column-right {
-  border: solid 1px black;
+  background-image: url(../img/3d.jpg);
+  background-size: cover;
   height: 100%;
   width: 40%;
+}
+
+.contact-us {
+  width: 60%;
+  margin: 50px auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  scroll-margin-top: 200px;
+  border-radius: 10px;
+  padding: 0px 100px 20px 100px;
+  width: 40%;
+  box-shadow: #2f563d 0px 4px 8px;
+}
+
+.contact > p {
+  font-family: "Arial", sans-serif;
+  color: var(--text-green);
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact > h2 {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: var(--text-green);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact > form > input,
+.contact > form > textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--text-green);
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+.contact > form > label {
+  font-family: "Arial", sans-serif;
+  color: var(--text-green);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.contact > form > button {
+  margin: 20px 0px 20px 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--text-green);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact > form > button:hover {
+  background-color: white;
+  color: green;
 }
 
 footer {
