@@ -1,4 +1,4 @@
-/* variabili colore */
+/* variabili colore e font */
 html {
   scroll-behavior: smooth;
 }
@@ -9,6 +9,24 @@ html > body {
   background-blend-mode: lighten;
   margin: 0;
   padding: 0px;
+}
+
+.scroll-button {
+  width: 50px;
+  position: fixed; /* Fissa il pulsante in una posizione specifica */
+  bottom: 20px; /* Distanza dal fondo dello schermo */
+  right: 20px; /* Distanza dal lato destro dello schermo */
+  background-color: #36393B; /* Colore di sfondo */
+  color: white; /* Colore del testo */
+  padding: 10px 15px; /* Spaziatura interna */
+  border-radius: 50%; /* Forma circolare */
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  display: block; /* Nasconde il pulsante di default */
+  z-index: 1000; /* Assicura che sia sopra gli altri elementi */
+  transition: opacity 0.3s ease; /* Transizione per l'apparizione */
 }
 
 .first-line {
@@ -40,13 +58,6 @@ html > body {
 header {
   display: flex;
   flex-direction: row;
-}
-
-.logo a img {
-  width: 150px;
-  height: 100%;
-  margin-left: 20px;
-  border-radius: 0 0 10px 10px;
 }
 
 header > nav {
@@ -90,10 +101,14 @@ header > nav {
   transition: background-color 0.3s, color 0.3s;
 }
 .nav-container > .nav-links > li > a:hover {
-  color: #36393B;
+  color: #44b4ff;
   background-color: white;
   border-right: 1px solid black;
   border-left: 1px solid black;
+}
+
+.nav-links > li:first-of-type > a {
+  color: #44b4ff;
 }
 
 .container-ham {
@@ -209,6 +224,9 @@ header > nav {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+}
+.container-main > .container-column-right > .card-main > .card-description > .btn:hover {
+  background-color: #EBF6FF;
 }
 .container-main > .container-column-right > .card-main > .card-description > .btn > a {
   text-decoration: none;

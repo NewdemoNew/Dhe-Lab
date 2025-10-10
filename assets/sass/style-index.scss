@@ -1,4 +1,4 @@
-/* variabili colore */
+/* variabili colore e font */
 
 $back-color:rgb(247 247 247);
 $main-font:inter, sans-serif;
@@ -8,6 +8,7 @@ $color-1:#36393B;
 $color-2:#EBF6FF;
 $color-3:#AFD0D6;
 $color-4:#D0C8CC;
+$color-blue:#44b4ff;
 
 html{
     scroll-behavior: smooth;
@@ -21,6 +22,25 @@ html{
     padding:0px;
     }
 }
+// prova scroll to top
+.scroll-button {
+    width: 50px;
+    position: fixed; /* Fissa il pulsante in una posizione specifica */
+    bottom: 20px; /* Distanza dal fondo dello schermo */
+    right: 20px; /* Distanza dal lato destro dello schermo */
+    background-color: $color-1; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    padding: 10px 15px; /* Spaziatura interna */
+    border-radius: 50%; /* Forma circolare */
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: block; /* Nasconde il pulsante di default */
+    z-index: 1000; /* Assicura che sia sopra gli altri elementi */
+    transition: opacity 0.3s ease; /* Transizione per l'apparizione */
+}
+
 .first-line{
     display: block;
     width:100%;
@@ -51,13 +71,8 @@ header{
     display: flex;
     flex-direction: row;
 }
-.logo a img{
-    width: 150px;
-    height: 100%;
-    margin-left: 20px;
-    border-radius: 0 0 10px 10px;
-}
 header > nav{
+    
     height: 100px;
     width: 100%;
     display: flex;
@@ -83,6 +98,7 @@ header > nav{
     
         >li{
         list-style: none;
+       
                 >a{
                 font-family: $title-font;
                 box-sizing: content-box;
@@ -94,9 +110,10 @@ header > nav{
                 border-right: 1px solid transparent;
                 border-left: 1px solid transparent;
                 transition: background-color 0.3s, color 0.3s;
+                
             
             &:hover{ 
-                color: $color-1;
+                color: $color-blue;
             background-color: white;
             border-right: 1px solid black;
             border-left: 1px solid black;
@@ -104,6 +121,9 @@ header > nav{
             }
         }
     }
+}
+.nav-links > li:first-of-type > a {
+    color: $color-blue;
 }
 .container-ham{
     display: none;
@@ -222,11 +242,16 @@ header > nav{
                     font-weight: bold;
                     cursor: pointer;
                     transition: background-color 0.3s, color 0.3s;
+                    &:hover{
+                           background-color: $color-2;
+                            
+                        }
                     >a{
                         text-decoration: none;
                         color: white;
                         &:hover{
                             color: $color-1;
+                            
                         }
                     }
                 }
@@ -382,7 +407,6 @@ header > nav{
         transform: rotate(360deg);
     }    
 }
-
 @keyframes pulse {
                       0% {
                             transform: scale(1);
