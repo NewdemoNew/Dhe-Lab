@@ -99,7 +99,6 @@ nav{
                             color: $color-puls;
                         }
                   }
-
                 }
             }
          }
@@ -109,9 +108,20 @@ nav{
                 height: 100%;
                 width: 52%;
                 padding: 30px;
+
+                >.info-personali{
+                    display: flex;
+                    >.foto img{
+                    width: 60%;
+                    margin-left:10%;
+                    }
+                }
+                >.foto img{
+                    width: 60%;
+                    margin-left:10%;
+                    }
             }
         }
-
 .container > .column-left> .container-list > ul > li:first-of-type > a{
     color: $color-puls;
 }
