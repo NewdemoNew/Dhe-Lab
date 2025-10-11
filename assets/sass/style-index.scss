@@ -185,6 +185,7 @@ header > nav{
     }
 }
 .container-main{
+    margin-top: 3%;
     width: 100%;
     height: 70%;
     background-color:$sfondo;
@@ -305,19 +306,23 @@ header > nav{
             height: 700px;
             display: flex;
             flex-direction: row;
+            justify-content: center;
+            margin: 0% 13% 0% 9%;
 
             >.column-left{
-                border-radius: 20px;
-                background-color:$color-1;
+                height: 75%;
+                border-radius: 20px 0px 0px 20px;
+                background-color:$card;
                 width: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin-left: 2%;
+                box-shadow: $pulsanti 0px 4px 8px;
 
                     >.container-grid{
-                        width: 40%;
-                        height: 50%;
+                        width: 45%;
+                        height: 71%;
                         border: solid 11px $color-2;
                         border-radius: 10px;
 
@@ -396,18 +401,18 @@ header > nav{
                 }
             }
                 >.column-right{
-                    border-radius: 20px;
-                    width: 70%;
+                    border-radius: 0px 20px 20px 20px;
+                    width: 30%;
                     height: 90%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    background-color: $color-2;
-                    border-radius: 20px;
+                    background-color: $card;
+                    box-shadow: $pulsanti 0px 4px 8px;
+
                     >.row-up{
-                        background-color: $color-2;
-                        border-radius: 20px;
+                        background-color: $card;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -418,12 +423,14 @@ header > nav{
                             font-family: $title-font;
                             font-size: 30px;
                             font-weight: bolder;
+                            color:$testo-principale;
                         }
                         >p{
                             font-family: $main-font;
                             font-size: 18px;
-                            text-align: center;
+                            text-align: justify;
                             margin-top: 10px;
+                            color:$testo-principale;
                         }
                         
                    }
@@ -532,8 +539,7 @@ header > nav{
         margin-top: 200px;
         height: 700px;
         width: 80%;
-        border-radius: 20px;
-        background-color: $color-4;
+            background-color: $card;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -546,6 +552,8 @@ header > nav{
             width: 100%;
             display: flex;
             flex-direction: row;
+            border-radius: 20px;
+            box-shadow: $pulsanti 0px 4px 8px;
             
                 >.column-left{
                     height: 100%;
@@ -560,12 +568,14 @@ header > nav{
                             font-family: $title-font;
                             font-size: 30px;
                             font-weight: bolder;
+                            color:$testo-principale;
                         }
                         >p{
                             font-family: $main-font;
                             font-size: 18px;
                             text-align: left;
                             margin-top: 10px;
+                            color:$testo-principale;
                         }
                     }
                 }
