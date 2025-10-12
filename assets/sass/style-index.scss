@@ -11,7 +11,7 @@ $color-4:#D0C8CC;
 $color-blue:#44b4ff;
 // colori da provare per il sito
 $sfondo:#0A192F;
-$pulsanti:#64FFDA;
+$pulsanti:#64FFDA;  
 $testo-principale:#E6F1FF;
 $testo-secondario:#8892B0;
 $card:#112240;
@@ -252,7 +252,7 @@ header > nav{
                     font-family: $title-font;
                     font-weight: bolder;
                     color: $testo-principale;
-                    font-size: 40px;
+                    font-size: 2.5rem;
                     margin-bottom: 10px;
                 }
                 >.btn1{
@@ -817,17 +817,80 @@ footer{
         }
     }
 }
+// PROVA SKILLS
+.skills {        
+    padding: 4rem 0;
+    background-color: $card;
+        >.container{
+            >.section-title{
+                color: $testo-principale;
+                text-align: center;
+                font-family: $title-font;
+                margin-bottom: 20px;
+            }
+        }
+        }
 
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
 
+        .skill-item {
+            padding: 1.5rem;
+            background-color: #0A192F;
+            border-radius: 8px;
+            border-left: 3px solid $pulsanti;
+        }
 
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            >h2{
+                color:$testo-principale;
+            }
+        }
 
+        .skill-percent {
+            color: #64FFDA;
+            font-weight: bold;
+        }
 
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #233554;
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #64FFDA, #C792EA);
+            border-radius: 10px;
+            animation: fillBar 1.5s ease-out;
+        }
 
+        @keyframes fillBar {
+            from { width: 0; }
+        }
 
 // media query per tablet e mobile
 @media screen and (max-width: 768px){
     .container-ham{
         display: block;
     }
+}
+@media  screen and (max-width: 1660px){
+    .container-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    .container-column-right >.card-main >.card-description >h2{
+        font-size: 1.5rem;
+    }
+}
 }

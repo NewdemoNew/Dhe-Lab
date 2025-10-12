@@ -224,7 +224,7 @@ header > nav {
   font-family: "DM Serif Display", serif;
   font-weight: bolder;
   color: #E6F1FF;
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 .container-main > .container-column-right > .card-main > .card-description > .btn1 {
@@ -796,8 +796,76 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   color: #64FFDA;
 }
 
+.skills {
+  padding: 4rem 0;
+  background-color: #112240;
+}
+.skills > .container > .section-title {
+  color: #E6F1FF;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skill-item {
+  padding: 1.5rem;
+  background-color: #0A192F;
+  border-radius: 8px;
+  border-left: 3px solid #64FFDA;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.skill-name > h2 {
+  color: #E6F1FF;
+}
+
+.skill-percent {
+  color: #64FFDA;
+  font-weight: bold;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #233554;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #64FFDA, #C792EA);
+  border-radius: 10px;
+  animation: fillBar 1.5s ease-out;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .container-ham {
     display: block;
+  }
+}
+@media screen and (max-width: 1660px) {
+  .container-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-main .container-column-right > .card-main > .card-description > h2 {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style-index.css.map */
