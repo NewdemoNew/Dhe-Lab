@@ -5,22 +5,29 @@ $color-testi:#1E2A5E;
 $color-titoli:#1E2A5E;
 $color-puls:#3E8EDE;
 $color-bordo:#A3A9B7;
+// colori da provare per il sito
+$sfondo:#0A192F;
+$pulsanti:#64FFDA;
+$testo-principale:#E6F1FF;
+$testo-secondario:#8892B0;
+$card:#112240;
+$hover:#233554; 
 
 html{
     scroll-behavior: smooth;
-    background-color: $color-sfondo;
+    background-color: $sfondo;
 }
 body{
     margin: 0;
     padding: 0;
-    background-color: $color-sfondo;
+    background-color: $sfondo;
 }
 nav{
     height: 80px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: $color-sfondo;
+    background-color: $card;
     margin-right: 20px;
     
 }
@@ -46,7 +53,7 @@ nav{
                 font-family: $main-font;
                 box-sizing: content-box;
                 text-decoration: none;
-                color: $color-testi;
+                color: $testo-principale;
                 font-size: 1rem;
                 font-weight: bold;
                 padding: 5px;
@@ -76,12 +83,12 @@ nav{
     width: 100%;
     
          >.column-left{
-            background-color: $color-sfondo;
+            background-color: $card;
             display: flex;
             height: 100%;
             width: 20%;
             >.container-list{
-                background-color: $color-sfondo;
+                background-color: $card;
                 position:fixed;
                 height: 100%;
                 width: 19%;
@@ -91,7 +98,7 @@ nav{
                     font-weight: bold;
                       >a{
                           text-decoration: none;
-                          color: black;
+                          color:$testo-principale;
                           transition: color 0.3s;
                           font-size: 1.5rem;
                         
@@ -103,7 +110,7 @@ nav{
             }
          }
             >.column-right{
-                color: $color-testi;
+                color: $testo-principale;
                 border-left: solid 5px $color-bordo;
                 height: 100%;
                 width: 52%;
@@ -114,6 +121,15 @@ nav{
                     >.foto img{
                     width: 60%;
                     margin-left:10%;
+                    }
+                    >.testo >p >a{
+                        text-decoration: underline;
+                        color:$testo-principale;
+                        transition: color 0.3s;
+                        
+                        &:hover{
+                            color: $color-puls;
+                        }
                     }
                 }
                 >.foto img{
@@ -126,5 +142,17 @@ nav{
     color: $color-puls;
 }
 .titolo{
-    color: $color-titoli;
+    color: $testo-principale;
+    background-color: $card;
+    box-shadow: #3E8EDE 0px 0px 8px, #3E8EDE 0px 0px 16px;
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+
+}
+
+p, h3, h4{
+    font-family: $main-font;
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
