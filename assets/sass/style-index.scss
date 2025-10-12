@@ -432,12 +432,19 @@ header > nav{
                             margin-top: 10px;
                             color:$testo-principale;
                         }
+                        >.title{
+                            font-family: $main-font;
+                            color: $testo-secondario;
+                        }
+                        >.c{ 
+                            font-family: $main-font;
+                            color: $testo-secondario;
                         
                    }
                 }
                 }
             }
-    }
+    }}
 @keyframes rotate{
     0%{
         transform: rotate(0deg);
@@ -509,7 +516,7 @@ header > nav{
                     height: 40%;
                 }
                 >.row-down{
-                    background-color: $color-4;
+                    background-color: $card;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -518,14 +525,29 @@ header > nav{
                     height: 60%;
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
+                    box-shadow: $pulsanti 0px 4px 8px;
+
                     >.card-p2{
                         text-align: center;
 
                         >h3,h4{
                             font-family: $pixels;
+                            color: $testo-principale;
                         }
-                        >p{ 
-                            font-family: $title-font;                       
+                        >p{
+                            font-family: $main-font;
+                            font-size: 18px;
+                            text-align: center;
+                            margin-top: 10px;
+                            color:$testo-principale;
+                        }
+                        >.title{
+                            font-family: $main-font;
+                            color: $testo-secondario;
+                        }
+                        >.c{ 
+                            font-family: $main-font;
+                            color: $testo-secondario;                       
                         
                         
                     }
@@ -535,11 +557,10 @@ header > nav{
 
 // PASSIONE 3
 .passion3{
-    
         margin-top: 200px;
         height: 700px;
         width: 80%;
-            background-color: $card;
+        background-color: $card;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -577,8 +598,16 @@ header > nav{
                             margin-top: 10px;
                             color:$testo-principale;
                         }
+                        >.title{
+                            font-family: $main-font;
+                            color: $testo-secondario;
+                        }
+                        >.c{ 
+                            font-family: $main-font;
+                            color: $testo-secondario;
                     }
                 }
+            }
                 >.column-right{
                     height: 100%;
                     width: 40%;
@@ -610,6 +639,53 @@ header > nav{
         }}
 
 }
+
+.projects{
+    width: 100%;
+    height: 500px;
+    margin-top: 200px;
+    justify-content: center;
+    text-align: center;
+    >.projects-title h2{
+            text-align: center;
+            font-family: $title-font;
+            color: $testo-principale;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        >.container-projects{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            >.card-project{
+                width: 25%;
+                height: auto;
+                background-color: $card;
+                box-shadow: $pulsanti 0px 4px 8px;
+                padding: 15px;
+                border-radius: 10px;
+                >h3{
+                    font-family: $main-font;
+                    color: $testo-principale;
+                }
+                >p{
+                    font-family: $main-font;
+                    font-size: 18px;
+                    text-align: center;
+                    margin-top: 10px;
+                    color:$testo-principale;}
+                
+
+            }
+        }
+    }
+
+
+
+
+
 
 // SEZIONA CONTATTAMI
 
