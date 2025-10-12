@@ -818,17 +818,18 @@ footer{
     }
 }
 // PROVA SKILLS
-.skills {        
-    padding: 4rem 0;
-    background-color: $card;
-        >.container{
-            >.section-title{
-                color: $testo-principale;
-                text-align: center;
-                font-family: $title-font;
-                margin-bottom: 20px;
+.skills {
+            padding: 4rem 0;
+            background-color: $card;
+            >.container{ 
+                
+                    >.section-title{
+                    text-align: center;
+                    font-family: $title-font;
+                    color: $testo-principale;
+                    margin-bottom: 20px;
+                }
             }
-        }
         }
 
         .skills-grid {
@@ -839,7 +840,7 @@ footer{
 
         .skill-item {
             padding: 1.5rem;
-            background-color: #0A192F;
+            background-color: $sfondo;
             border-radius: 8px;
             border-left: 3px solid $pulsanti;
         }
@@ -848,33 +849,35 @@ footer{
             display: flex;
             justify-content: space-between;
             margin-bottom: 0.5rem;
-            >h2{
+            >span{
                 color:$testo-principale;
             }
         }
 
         .skill-percent {
-            color: #64FFDA;
+            color: $pulsanti;
             font-weight: bold;
         }
 
         .skill-bar {
             width: 100%;
             height: 8px;
-            background-color: #233554;
+            background-color: $hover;
             border-radius: 10px;
             overflow: hidden;
         }
 
         .skill-progress {
+            width: 0;
             height: 100%;
-            background: linear-gradient(90deg, #64FFDA, #C792EA);
+            background: linear-gradient(90deg, $pulsanti, #C792EA);
             border-radius: 10px;
-            animation: fillBar 1.5s ease-out;
+            animation: fillBar 1.5s ease-out ;
         }
 
         @keyframes fillBar {
             from { width: 0; }
+            to { width: 100%; }
         }
 
 // media query per tablet e mobile

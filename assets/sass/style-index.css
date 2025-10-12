@@ -801,9 +801,9 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   background-color: #112240;
 }
 .skills > .container > .section-title {
-  color: #E6F1FF;
   text-align: center;
   font-family: "DM Serif Display", serif;
+  color: #E6F1FF;
   margin-bottom: 20px;
 }
 
@@ -825,7 +825,7 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   justify-content: space-between;
   margin-bottom: 0.5rem;
 }
-.skill-name > h2 {
+.skill-name > span {
   color: #E6F1FF;
 }
 
@@ -843,6 +843,7 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
 }
 
 .skill-progress {
+  width: 0;
   height: 100%;
   background: linear-gradient(90deg, #64FFDA, #C792EA);
   border-radius: 10px;
@@ -852,6 +853,9 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
 @keyframes fillBar {
   from {
     width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
