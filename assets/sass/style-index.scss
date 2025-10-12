@@ -20,6 +20,7 @@ $hover:#233554;
 
 
 
+
 html{
     scroll-behavior: smooth;
 
@@ -33,6 +34,11 @@ html{
     background-color: $sfondo;
     }
 }
+
+.badge{
+    background-color: $sfondo; 
+    box-shadow: $testo-secondario 0px 0px 8px, $testo-secondario 0px 0px 16px; 
+}
 // prova scroll to top
 .scroll-button {
     width: 50px;
@@ -40,9 +46,9 @@ html{
     bottom: 20px; /* Distanza dal fondo dello schermo */
     right: 20px; /* Distanza dal lato destro dello schermo */
     background-color: $card; /* Colore di sfondo */
-    color: $testo-principale; /* Colore del testo */
+    color: $pulsanti; /* Colore del testo */
     padding: 10px 15px; /* Spaziatura interna */
-    border: solid 2px $testo-principale; /* Bordo bianco */
+    border: solid 2px $pulsanti; /* Bordo bianco */
     border-radius: 50%; /* Forma circolare */
     text-align: center;
     text-decoration: none;
@@ -50,7 +56,11 @@ html{
     font-weight: bold;
     display: block; /* Nasconde il pulsante di default */
     z-index: 1000; /* Assicura che sia sopra gli altri elementi */
-    transition: opacity 0.3s ease; /* Transizione per l'apparizione */
+    transition: 0.5s ease-in-out; /* Transizione per l'apparizione */
+    &:hover{
+            box-shadow: $pulsanti 0px 0px 8px, $pulsanti 0px 0px 16px;
+            transform: scale(1.1);
+    }
 }
 
 .first-line{
@@ -70,8 +80,13 @@ html{
         >.social img{
             height: 2rem;
             margin-right: 5px;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                box-shadow: $pulsanti 0px 0px 8px, $pulsanti 0px 0px 16px;
+                cursor: pointer;
         }
     }
+}
 }
 .hero{
     width: 100%;
@@ -432,6 +447,7 @@ header > nav{
                             margin-top: 10px;
                             color:$testo-principale;
                         }
+                        
                         >.title{
                             font-family: $main-font;
                             color: $testo-secondario;
@@ -639,7 +655,6 @@ header > nav{
         }}
 
 }
-
 .projects{
     width: 100%;
     height: 500px;
@@ -652,7 +667,8 @@ header > nav{
             color: $testo-principale;
             font-size: 40px;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 80px;
+            margin-top: 150px;
         }
         >.container-projects{
             display: flex;
@@ -702,9 +718,9 @@ header > nav{
     border-radius: 10px;
     padding:80px 100px 20px 100px;
     width: 68%;
-    background-color: $color-1;
-    color:$color-2;
-    box-shadow: #222724 0px 4px 8px;
+    background-color: $card;
+    color:$testo-principale;
+    box-shadow: $pulsanti 0px 4px 8px;
 }
 
 .contact > p{
@@ -745,27 +761,74 @@ header > nav{
     margin-top: 20px;
 }
 .contact > form > button{
-    margin: 20px 0px 20px 0px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--text-green);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-.contact > form > button:hover{
-    background-color: white;
-    color: $color-blue;
-}
+    margin: 20px 10px 10px 0;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color:$pulsanti;
+                    color: $sfondo;
+                    font-size: 20px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                           box-shadow: $pulsanti 0px 0px 8px, $pulsanti 0px 0px 16px;
+                           transform: translateY(-3px);
+                            
+                        }
+                    >a{
+                        text-decoration: none;
+                        color: $sfondo;
+                        
+                    }
+                }
 // FOOTER
 footer{
-    height: 400px;
+    height: 250px;
     width: 100%;
-    background-color: $color-1;
+    background-color: $card;
+    >.container-footer{
+        display: flex;
+        flex-direction: row;
+        >.column-left-footer img{
+            width: 230px;
+            border-radius: 20px;
+            margin:20px;
+        }
+        >.column-center-footer, .column-right-footer{
+            margin: 30px;
+            text-align: end;
+            >h4{
+                font-family: $title-font;
+                color: $testo-secondario;
+                font-size: 23px;
+                margin-top: 5px;
+            }
+            > ul li{
+                list-style: none;
+                margin-top: 10px;
+                >a{
+                    text-decoration: none;
+                    color: $testo-secondario;
+                    font-family: $main-font;
+                    font-size: 16px;
+                    &:hover{
+                        color: $pulsanti;
+                    }
+                }
+            }
+
+        }
+    }
 }
+
+
+
+
+
+
+
+
 // media query per tablet e mobile
 @media screen and (max-width: 768px){
     .container-ham{

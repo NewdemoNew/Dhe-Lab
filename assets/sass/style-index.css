@@ -8,15 +8,20 @@ html > body {
   background-color: #0A192F;
 }
 
+.badge {
+  background-color: #0A192F;
+  box-shadow: #8892B0 0px 0px 8px, #8892B0 0px 0px 16px;
+}
+
 .scroll-button {
   width: 50px;
   position: fixed; /* Fissa il pulsante in una posizione specifica */
   bottom: 20px; /* Distanza dal fondo dello schermo */
   right: 20px; /* Distanza dal lato destro dello schermo */
   background-color: #112240; /* Colore di sfondo */
-  color: #E6F1FF; /* Colore del testo */
+  color: #64FFDA; /* Colore del testo */
   padding: 10px 15px; /* Spaziatura interna */
-  border: solid 2px #E6F1FF; /* Bordo bianco */
+  border: solid 2px #64FFDA; /* Bordo bianco */
   border-radius: 50%; /* Forma circolare */
   text-align: center;
   text-decoration: none;
@@ -24,7 +29,11 @@ html > body {
   font-weight: bold;
   display: block; /* Nasconde il pulsante di default */
   z-index: 1000; /* Assicura che sia sopra gli altri elementi */
-  transition: opacity 0.3s ease; /* Transizione per l'apparizione */
+  transition: 0.5s ease-in-out; /* Transizione per l'apparizione */
+}
+.scroll-button:hover {
+  box-shadow: #64FFDA 0px 0px 8px, #64FFDA 0px 0px 16px;
+  transform: scale(1.1);
 }
 
 .first-line {
@@ -44,6 +53,11 @@ html > body {
 .first-line > .container-social > .social img {
   height: 2rem;
   margin-right: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.first-line > .container-social > .social img:hover {
+  box-shadow: #64FFDA 0px 0px 8px, #64FFDA 0px 0px 16px;
+  cursor: pointer;
 }
 
 .hero {
@@ -633,7 +647,8 @@ header > nav {
   color: #E6F1FF;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
+  margin-top: 150px;
 }
 .projects > .container-projects {
   display: flex;
@@ -675,9 +690,9 @@ header > nav {
   border-radius: 10px;
   padding: 80px 100px 20px 100px;
   width: 68%;
-  background-color: #36393B;
-  color: #EBF6FF;
-  box-shadow: #222724 0px 4px 8px;
+  background-color: #112240;
+  color: #E6F1FF;
+  box-shadow: #64FFDA 0px 4px 8px;
 }
 
 .contact > p {
@@ -723,27 +738,62 @@ header > nav {
 }
 
 .contact > form > button {
-  margin: 20px 0px 20px 0px;
+  margin: 20px 10px 10px 0;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: var(--text-green);
-  color: white;
+  background-color: #64FFDA;
+  color: #0A192F;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: all 0.5s ease-in-out;
 }
-
 .contact > form > button:hover {
-  background-color: white;
-  color: #44b4ff;
+  box-shadow: #64FFDA 0px 0px 8px, #64FFDA 0px 0px 16px;
+  transform: translateY(-3px);
+}
+.contact > form > button > a {
+  text-decoration: none;
+  color: #0A192F;
 }
 
 footer {
-  height: 400px;
+  height: 250px;
   width: 100%;
-  background-color: #36393B;
+  background-color: #112240;
+}
+footer > .container-footer {
+  display: flex;
+  flex-direction: row;
+}
+footer > .container-footer > .column-left-footer img {
+  width: 230px;
+  border-radius: 20px;
+  margin: 20px;
+}
+footer > .container-footer > .column-center-footer, footer > .container-footer .column-right-footer {
+  margin: 30px;
+  text-align: end;
+}
+footer > .container-footer > .column-center-footer > h4, footer > .container-footer .column-right-footer > h4 {
+  font-family: "DM Serif Display", serif;
+  color: #8892B0;
+  font-size: 23px;
+  margin-top: 5px;
+}
+footer > .container-footer > .column-center-footer > ul li, footer > .container-footer .column-right-footer > ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+footer > .container-footer > .column-center-footer > ul li > a, footer > .container-footer .column-right-footer > ul li > a {
+  text-decoration: none;
+  color: #8892B0;
+  font-family: inter, sans-serif;
+  font-size: 16px;
+}
+footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .container-footer .column-right-footer > ul li > a:hover {
+  color: #64FFDA;
 }
 
 @media screen and (max-width: 768px) {
