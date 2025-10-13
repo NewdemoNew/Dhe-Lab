@@ -273,8 +273,12 @@ header > nav {
   margin-top: 200px;
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: row;
+}
+.passion1 > .projects-title {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  color: #E6F1FF;
+  margin-bottom: 80px;
 }
 .passion1 > .container-col-p1 {
   width: 100%;
@@ -282,13 +286,12 @@ header > nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0% 13% 0% 9%;
 }
 .passion1 > .container-col-p1 > .column-left {
   height: 75%;
   border-radius: 20px 0px 0px 20px;
   background-color: #112240;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,7 +375,7 @@ header > nav {
 }
 .passion1 > .container-col-p1 > .column-right {
   border-radius: 0px 20px 20px 20px;
-  width: 30%;
+  width: 40%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -511,11 +514,11 @@ header > nav {
   align-items: center;
 }
 .passion2 > .container-col-p2 > .row-up {
-  background-image: url(../img/sfondo-videogame2.jpg);
+  background-image: url(../img/n-cane.jpg);
   background-size: cover;
-  border: solid 1px black;
-  width: 100%;
-  height: 40%;
+  border-radius: 10px 10px 0px 0px;
+  width: 41%;
+  height: 70%;
 }
 .passion2 > .container-col-p2 > .row-down {
   background-color: #112240;
@@ -525,8 +528,7 @@ header > nav {
   align-items: center;
   width: 70%;
   height: 60%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   box-shadow: #64FFDA 0px 4px 8px;
 }
 .passion2 > .container-col-p2 > .row-down > .card-p2 {
@@ -575,6 +577,7 @@ header > nav {
 .passion3 > .container-col-p3 > .column-left {
   height: 100%;
   width: 60%;
+  padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -800,7 +803,7 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   padding: 4rem 0;
   background-color: #112240;
 }
-.skills > .container > .section-title {
+.skills > .container > .section-title, .skills > .container h4 {
   text-align: center;
   font-family: "DM Serif Display", serif;
   color: #E6F1FF;
