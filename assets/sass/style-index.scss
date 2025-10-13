@@ -848,7 +848,8 @@ footer{
     }
     .container-ham{
         display: block;
-        margin: 50px;
+        margin: 20px 0px 0px 0px;
+        width: 40px;
         > .menu-ham{
              > summary > img{
             width: 90%;
@@ -1029,5 +1030,6 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
     text-align: left;
  }
 }
+
 
     

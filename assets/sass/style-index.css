@@ -838,7 +838,8 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   }
   .container-ham {
     display: block;
-    margin: 50px;
+    margin: 20px 0px 0px 0px;
+    width: 40px;
   }
   .container-ham > .menu-ham > summary > img {
     width: 90%;
