@@ -886,10 +886,121 @@ footer{
 
 // media query per tablet e mobile
 @media screen and (max-width: 768px){
-    .container-ham{
-        display: block;
+    
+     .container-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >.container-column-left{
+
+            align-items: flex-start;
+            width: 80%;
+            margin-left: 10%;
+        }
+        >.container-column-right{
+            align-items: center;
+            width: 110%;
+            >.card-main > .card-description > h2{
+                width: 140%;
+            }
+        }
+    }
+    .passion1 > .container-col-p1{
+        flex-direction: column;
+        align-items: center;
+        >.column-left{
+            width: 50%;
+            height: 40%;
+            border-radius: 20px;
+        }
+        >.column-right{
+            width: 90%;
+            padding-top: 20px;
+            border-radius: 20px;
+        }
+    }
+    .passion2 > .container-col-p2{
+        >.row-up{
+            width: 80%;
+            height: 40%;
+            border-radius: 20px 20px 0px 0px;
+        }
+        >.row-down{
+            width: 80%;
+            height: 100%;
+            border-radius: 0px 0px 20px 20px;
+            padding: 20px;
+        }
+    }
+    .passion3 > .container-col-p3{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        padding-top: 20px;
+        background-color: $card;
+
+        >.column-left{
+            width: 80%;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        >.column-right{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            height: auto;
+            >.img-p3{
+                width: 100%;
+                margin-top: 0;
+                >img{
+                    border-radius: 20px;
+                }
+            }
+            >.img-p3-2{
+                width: 100%;
+                margin-top: 20px;
+                >img{
+                    border-radius: 20px;
+                }
+            }
+        }
+
+    }
+    .projects{
+        height: auto;
+        padding-bottom: 20px;
+
+    
+     > .container-projects{
+        flex-direction: column;
+        align-items: center;
+        >.card-project{
+            width: 80%;
+            margin-bottom: 30px;
+        }
     }
 }
+.contact-us{
+    width: 90%;
+    >.contact{
+    width: 100%;
+    padding: 40px 20px 20px 20px;}
+}
+.scroll-button{
+    width: 80px;
+    height: 80px;
+    ;
+}
+}
+
+
+
+
+
+
+
+// -------------------1660PX--------------------
 @media  screen and (max-width: 1660px){
     .first-line > .container-social > .social img{
         height: 3rem;

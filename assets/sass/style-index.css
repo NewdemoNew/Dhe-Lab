@@ -862,8 +862,103 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   }
 }
 @media screen and (max-width: 768px) {
-  .container-ham {
-    display: block;
+  .container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-main > .container-column-left {
+    align-items: flex-start;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .container-main > .container-column-right {
+    align-items: center;
+    width: 110%;
+  }
+  .container-main > .container-column-right > .card-main > .card-description > h2 {
+    width: 140%;
+  }
+  .passion1 > .container-col-p1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .passion1 > .container-col-p1 > .column-left {
+    width: 50%;
+    height: 40%;
+    border-radius: 20px;
+  }
+  .passion1 > .container-col-p1 > .column-right {
+    width: 90%;
+    padding-top: 20px;
+    border-radius: 20px;
+  }
+  .passion2 > .container-col-p2 > .row-up {
+    width: 80%;
+    height: 40%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .passion2 > .container-col-p2 > .row-down {
+    width: 80%;
+    height: 100%;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+  }
+  .passion3 > .container-col-p3 {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    padding-top: 20px;
+    background-color: #112240;
+  }
+  .passion3 > .container-col-p3 > .column-left {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .passion3 > .container-col-p3 > .column-right {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+  }
+  .passion3 > .container-col-p3 > .column-right > .img-p3 {
+    width: 100%;
+    margin-top: 0;
+  }
+  .passion3 > .container-col-p3 > .column-right > .img-p3 > img {
+    border-radius: 20px;
+  }
+  .passion3 > .container-col-p3 > .column-right > .img-p3-2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .passion3 > .container-col-p3 > .column-right > .img-p3-2 > img {
+    border-radius: 20px;
+  }
+  .projects {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .projects > .container-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects > .container-projects > .card-project {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .contact-us {
+    width: 90%;
+  }
+  .contact-us > .contact {
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+  }
+  .scroll-button {
+    width: 80px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 1660px) {
