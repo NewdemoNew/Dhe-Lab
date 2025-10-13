@@ -156,3 +156,22 @@ p, h3, h4{
     font-size: 1.2rem;
     line-height: 1.5;
 }
+// MEDIA QUERY
+@media  screen and (max-width: 1660px){
+    .nav-container > .nav-links >li >a{
+        font-size: 1.3rem;
+    }
+    .container > .column-right{
+        width: 60%;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+.container > .column-left > .container-list > ul li{
+    padding-top: 15px;
+
+ > a{
+    font-size: 1.9rem;
+}
+}
+}
