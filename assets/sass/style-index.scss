@@ -19,14 +19,15 @@ $hover:#233554;
 
 html{
     scroll-behavior: smooth;
+    
 
     >body{
         // background-attachment: fixed;
         // background-image: url("../img/sfondo-body.png");
         // background-color: rgba(255, 255, 255, 0.8); /* Colore bianco semitrasparente */
         // background-blend-mode: lighten;
-    margin:0;
-    padding:0px;
+   
+    
     background-color: $sfondo;
     }
 }
@@ -255,7 +256,7 @@ header > nav{
                     font-size: 2.5rem;
                     margin-bottom: 10px;
                 }
-                >.btn1{
+                >span >.btn1{
                     margin: 10px 10px 10px 0;
                     padding: 10px 20px;
                     border-radius: 5px;
@@ -277,7 +278,7 @@ header > nav{
                         
                     }
                 }
-                    >.btn2{
+                    >span >.btn2{
                     margin: 10px 10px 10px 0;
                     padding: 10px 20px;
                     border-radius: 5px;
@@ -790,11 +791,17 @@ footer{
     >.container-footer{
         display: flex;
         flex-direction: row;
-        >.column-left-footer img{
-            width: 230px;
-            border-radius: 20px;
-            margin:20px;
+        width: 100%;
+        >.column-left-footer{
+            width: 20%;
+            >.logo-footer{
+                width: 100%;
+                img{
+                width: 100%;
+                border-radius: 20px;
+             margin:20px;
         }
+    }}
         >.column-center-footer, .column-right-footer{
             margin: 30px;
             text-align: end;
@@ -885,8 +892,62 @@ footer{
         }
 
 // media query per tablet e mobile
+
+// -------------------1660PX--------------------
+@media  screen and (max-width: 1660px){
+    .first-line > .container-social > .social img{
+        height: 3rem;
+    }
+    .container-ham{
+        display: block;
+        margin: 50px;
+        > .menu-ham{
+             > summary > img{
+            width: 90%;
+        }
+        .menu-list{
+            top:140%;
+            width: 240px;
+        }
+    }
+    }
+    .container-main{
+    >.container-column-right{
+         >.card-main >.card-description{
+            width: 75%;
+             >h2{
+        font-size: 1.8rem;
+    }
+}
+    }
+}
+    .nav-container >.nav-links{
+        display: none;
+    }
+    .passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > p{
+        font-size: 1.3rem;
+    }
+    .passion2 > .container-col-p2 > .row-down > .card-p2 > p{
+        font-size: 1.3rem;
+    }
+    .passion3 > .container-col-p3 > .column-left > .card-p3 > p{
+        font-size: 1.3rem;
+    }
+    .skill-name > span{
+        font-size: 1.3rem;
+    }
+footer > .container-footer > .column-center-footer > ul li > a, footer > .container-footer .column-right-footer > ul li > a{
+    font-size: 1.3rem;
+    }
+    .contact > p{
+        font-size: 1.3rem;
+    }
+    .contact > form > button{
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 768px){
-    
      .container-main{
         display: flex;
         flex-direction: column;
@@ -899,7 +960,7 @@ footer{
         }
         >.container-column-right{
             align-items: center;
-            width: 110%;
+            width: 100%;
             >.card-main > .card-description > h2{
                 width: 140%;
             }
@@ -990,67 +1051,40 @@ footer{
 .scroll-button{
     width: 80px;
     height: 80px;
-    ;
+    
 }
 }
-
-
-
-
-
-
-
-// -------------------1660PX--------------------
-@media  screen and (max-width: 1660px){
-    .first-line > .container-social > .social img{
-        height: 3rem;
-    }
-    .container-ham{
-        display: block;
-        margin: 50px;
-        > .menu-ham{
-             > summary > img{
-            width: 90%;
-        }
-        .menu-list{
-            top:140%;
-            width: 240px;
+@media screen and (max-width: 575px){
+    .passion1{
+        >.projects-title{
+            margin-bottom: 23%;
         }
     }
+    .passion1 > .container-col-p1 > .column-left > .container-grid{
+        width: 64%;
     }
-    .container-main{
-    >.container-column-right{
-         >.card-main >.card-description{
-            width: 75%;
-             >h2{
-        font-size: 1.8rem;
+    .passion2{
+       height: 800px;
     }
+    footer > .container-footer{
+        >.column-left-footer{
+            display: none;
+        }
+
+        >.column-center-footer{
+            text-align: left;
+            margin: 0px;
+            width: 30%;
+        }
+    .column-right-footer{
+        text-align: left;
+        margin: 0px;
+        width: 30%;
+    }
+ }
+ .links-footer{
+    text-align: left;
+ }
 }
-    }
-}
-    .nav-container >.nav-links{
-        display: none;
-    }
-    .passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > p{
-        font-size: 1.3rem;
-    }
-    .passion2 > .container-col-p2 > .row-down > .card-p2 > p{
-        font-size: 1.3rem;
-    }
-    .passion3 > .container-col-p3 > .column-left > .card-p3 > p{
-        font-size: 1.3rem;
-    }
-    .skill-name > span{
-        font-size: 1.3rem;
-    }
-footer > .container-footer > .column-center-footer > ul li > a, footer > .container-footer .column-right-footer > ul li > a{
-    font-size: 1.3rem;
-    }
-    .contact > p{
-        font-size: 1.3rem;
-    }
-    .contact > form > button{
-        width: 40%;
-    }
-}
+
     
