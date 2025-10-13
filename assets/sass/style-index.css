@@ -155,7 +155,7 @@ header > nav {
 .container-ham > .menu-ham > .menu-list > a {
   text-decoration: none;
   color: var(--text-green);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   font-family: "Arial", sans-serif;
   padding: 5px 10px;
@@ -394,13 +394,13 @@ header > nav {
 }
 .passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > h3 {
   font-family: "DM Serif Display", serif;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: bolder;
   color: #E6F1FF;
 }
 .passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > p {
   font-family: inter, sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
   text-align: justify;
   margin-top: 10px;
   color: #E6F1FF;
@@ -867,12 +867,48 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   }
 }
 @media screen and (max-width: 1660px) {
-  .container-main {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .first-line > .container-social > .social img {
+    height: 3rem;
   }
-  .container-main .container-column-right > .card-main > .card-description > h2 {
-    font-size: 1.5rem;
+  .container-ham {
+    display: block;
+    margin: 50px;
+  }
+  .container-ham > .menu-ham > summary > img {
+    width: 90%;
+  }
+  .container-ham > .menu-ham .menu-list {
+    top: 140%;
+    width: 240px;
+  }
+  .container-main > .container-column-right > .card-main > .card-description {
+    width: 75%;
+  }
+  .container-main > .container-column-right > .card-main > .card-description > h2 {
+    font-size: 1.8rem;
+  }
+  .nav-container > .nav-links {
+    display: none;
+  }
+  .passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > p {
+    font-size: 1.3rem;
+  }
+  .passion2 > .container-col-p2 > .row-down > .card-p2 > p {
+    font-size: 1.3rem;
+  }
+  .passion3 > .container-col-p3 > .column-left > .card-p3 > p {
+    font-size: 1.3rem;
+  }
+  .skill-name > span {
+    font-size: 1.3rem;
+  }
+  footer > .container-footer > .column-center-footer > ul li > a, footer > .container-footer .column-right-footer > ul li > a {
+    font-size: 1.3rem;
+  }
+  .contact > p {
+    font-size: 1.3rem;
+  }
+  .contact > form > button {
+    width: 40%;
   }
 }/*# sourceMappingURL=style-index.css.map */
