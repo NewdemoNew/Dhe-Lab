@@ -980,6 +980,22 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   }
 }
 @media screen and (max-width: 575px) {
+  .first-line > .container-social {
+    margin-right: 5%;
+  }
+  .first-line > .container-social > .social {
+    margin-right: 4px;
+  }
+  .first-line > .container-social > .social > a > img {
+    height: 1.8rem;
+  }
+  .container-ham > .menu-ham > .menu-list {
+    width: 155px;
+  }
+  .container-ham > .menu-ham > .menu-list > a {
+    font-size: 1.3rem;
+    border-bottom: #112240 2px solid;
+  }
   .container-main > .container-column-left > .container-img > img {
     margin-left: 20px;
   }
