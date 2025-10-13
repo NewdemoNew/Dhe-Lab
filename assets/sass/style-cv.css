@@ -142,6 +142,17 @@ p, h3, h4 {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 501px) {
+  .container > .column-left .container-ham > .menu-ham > summary {
+    position: fixed;
+    top: 50px;
+    left: 20px;
+  }
+  .container > .column-right {
+    border-left: none;
+    width: 78%;
+  }
+}
 @media screen and (max-width: 768px) {
   .container > .column-left {
     width: 10%;
@@ -157,14 +168,14 @@ p, h3, h4 {
     width: -moz-fit-content;
     width: fit-content;
     position: fixed;
-    top: 85px;
-    left: 10px;
+    top: 10px;
+    left: 20px;
     position: absolute;
   }
   .container > .column-left .container-ham > .menu-ham > .menu-list {
     position: absolute;
-    top: 150px;
-    left: 20px;
+    top: 90px;
+    left: 30px;
     background-color: #E6F1FF;
     border-radius: 10px;
     display: flex;
@@ -192,7 +203,7 @@ p, h3, h4 {
     font-size: 1.3rem;
   }
   .container > .column-right {
-    width: 60%;
+    width: 75%;
   }
   p {
     font-size: 1.3rem;
