@@ -461,43 +461,22 @@ header > nav{
                 }
             }
     }}
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }    
-}
-@keyframes pulse {
-                      0% {
-                            transform: scale(1);
-                            box-shadow: 0 0 0 rgba(247, 247, 247, 0.3);
-                      }
-                      50% {
-                            transform: scale(1.3);
-                            box-shadow: 0 0 10px rgb(240, 234, 234);
-                      }
-                      100% {
-                            transform: scale(1);
-                            box-shadow: 0 0 0 rgba(245, 244, 244, 0.3);
-                }
-            }
+// animazioni per foto passion1
+// tolto pause tra una foto e l 'altra
 @keyframes scrollVertical {
                           0%    { transform: translateY(0); }
-                          17.5% { transform: translateY(0); } /*pausa tra una e l altra*/
+                        //   17.5% { transform: translateY(0); } 
                           25%   { transform: translateY(-12.5%); }       
                         //    foto2
-                          42.5% { transform: translateY(-12.5%); }      
+                        //   42.5% { transform: translateY(-12.5%); }      
                           50%   { transform: translateY(-25%); }        
                         //    foto3
-                          67.5% { transform: translateY(-25%); }       
+                        //   67.5% { transform: translateY(-25%); }       
                           75%   { transform: translateY(-37.5%); }      
                         //    foto4
-                          92.5% { transform: translateY(-37.5%); }      
+                        //   92.5% { transform: translateY(-37.5%); }      
                           100%  { transform: translateY(-50%); }        
                         }
-                        
 @keyframes scrollHorizontal {
     0%    { transform: translateX(0); }
     10%   { transform: translateX(-10%); }
@@ -511,7 +490,6 @@ header > nav{
     90%   { transform: translateX(-90%); }
     100%  { transform: translateX(-100%); }
                 }           
-
 // PASSIONE 2
 .passion2{
     margin-top: 200px;
@@ -564,13 +542,10 @@ header > nav{
                         >.c{ 
                             font-family: $main-font;
                             color: $testo-secondario;                       
-                        
-                        
                     }
                 }
     }
 }}
-
 // PASSIONE 3
 .passion3{
         margin-top: 200px;
@@ -583,7 +558,6 @@ header > nav{
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-
         >.container-col-p3{
             height: 100%;
             width: 100%;
@@ -591,7 +565,6 @@ header > nav{
             flex-direction: row;
             border-radius: 20px;
             box-shadow: $pulsanti 0px 4px 8px;
-            
                 >.column-left{
                     height: 100%;
                     width: 60%;
@@ -654,7 +627,6 @@ header > nav{
                             }
                 }
         }}
-
 }
 .projects{
     width: 100%;
@@ -693,19 +665,10 @@ header > nav{
                     text-align: center;
                     margin-top: 10px;
                     color:$testo-principale;}
-                
-
             }
         }
     }
-
-
-
-
-
-
 // SEZIONA CONTATTAMI
-
 .contact-us{
     width: 60%;
     margin: 50px auto;
@@ -723,7 +686,6 @@ header > nav{
     color:$testo-principale;
     box-shadow: $pulsanti 0px 4px 8px;
 }
-
 .contact > p{
     font-family: 'Arial', sans-serif;
     color: var(--text-green);
@@ -775,12 +737,10 @@ header > nav{
                     &:hover{
                            box-shadow: $pulsanti 0px 0px 8px, $pulsanti 0px 0px 16px;
                            transform: translateY(-3px);
-                            
                         }
                     >a{
                         text-decoration: none;
                         color: $sfondo;
-                        
                     }
                 }
 // FOOTER
@@ -824,7 +784,6 @@ footer{
                     }
                 }
             }
-
         }
     }
 }
@@ -833,7 +792,6 @@ footer{
             padding: 4rem 0;
             background-color: $card;
             >.container{ 
-                
                     >.section-title, h4{
                     text-align: center;
                     font-family: $title-font;
@@ -842,20 +800,17 @@ footer{
                 }
             }
         }
-
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-
         .skill-item {
             padding: 1.5rem;
             background-color: $sfondo;
             border-radius: 8px;
             border-left: 3px solid $pulsanti;
         }
-
         .skill-name {
             display: flex;
             justify-content: space-between;
@@ -864,12 +819,10 @@ footer{
                 color:$testo-principale;
             }
         }
-
         .skill-percent {
             color: $pulsanti;
             font-weight: bold;
         }
-
         .skill-bar {
             width: 100%;
             height: 8px;
@@ -877,7 +830,6 @@ footer{
             border-radius: 10px;
             overflow: hidden;
         }
-
         .skill-progress {
             width: 0;
             height: 100%;
@@ -885,15 +837,11 @@ footer{
             border-radius: 10px;
             animation: fillBar 1.5s ease-out ;
         }
-
         @keyframes fillBar {
             from { width: 0; }
             to { width: 100%; }
         }
-
 // media query per tablet e mobile
-
-// -------------------1660PX--------------------
 @media  screen and (max-width: 1660px){
     .first-line > .container-social > .social img{
         height: 3rem;
@@ -946,14 +894,12 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
         width: 40%;
     }
 }
-
 @media screen and (max-width: 768px){
      .container-main{
         display: flex;
         flex-direction: column;
         align-items: center;
         >.container-column-left{
-
             align-items: flex-start;
             width: 80%;
             margin-left: 10%;
@@ -999,7 +945,6 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
         height: auto;
         padding-top: 20px;
         background-color: $card;
-
         >.column-left{
             width: 80%;
             height: auto;
@@ -1026,13 +971,10 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
                 }
             }
         }
-
     }
     .projects{
         height: auto;
         padding-bottom: 20px;
-
-    
      > .container-projects{
         flex-direction: column;
         align-items: center;
@@ -1051,16 +993,12 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
 .scroll-button{
     width: 80px;
     height: 80px;
-    
 }
 }
 @media screen and (max-width: 575px){
     .container-main > .container-column-left > .container-img > img{
         margin-left: 20px;
     }
-    
-    
-    
     .passion1{
         >.projects-title{
             margin-bottom: 23%;
@@ -1076,7 +1014,6 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
         >.column-left-footer{
             display: none;
         }
-
         >.column-center-footer{
             text-align: left;
             margin: 0px;

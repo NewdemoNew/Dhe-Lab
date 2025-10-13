@@ -120,6 +120,7 @@ nav {
 .container > .column-right > .foto img {
   width: 60%;
   margin-left: 10%;
+  border-radius: 10px;
 }
 
 .container > .column-left > .container-list > ul > li:first-of-type > a {
