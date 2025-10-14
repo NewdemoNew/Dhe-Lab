@@ -997,7 +997,8 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
 }
 }
 @media screen and (max-width: 575px){
-.first-line > .container-social{
+
+    .first-line > .container-social{
     margin-right: 5%;
     >.social{
         margin-right: 4px;
@@ -1005,6 +1006,12 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
         height: 1.8rem;
     }
 }
+}
+header{
+    height: 6%;
+}
+.hero{
+    height: 650px;
 }
 .container-ham > .menu-ham > .menu-list{
     width: 155px;
@@ -1015,19 +1022,76 @@ footer > .container-footer > .column-center-footer > ul li > a, footer > .contai
 }
     .container-main > .container-column-left > .container-img > img{
         margin-left: 20px;
+        max-width: 145%;
+        width: 145%;
         
     }
+    .container-main > .container-column-right > .card-main{
+        width: 90%;
+         >.card-description > h2{
+            font-size: 1.5rem;
+         } 
+        }
+    
     .passion1{
         >.projects-title{
             margin-bottom: 23%;
         }
     }
-    .passion1 > .container-col-p1 > .column-left > .container-grid{
+    .passion1 > .container-col-p1 > .column-left{
+        width: 60%;
+        height: 33%; 
+        
+    > .container-grid{
         width: 64%;
     }
+}
+.passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > p{
+    font-size: 1rem;
+}
     .passion2{
-       height: 800px;
+       height: 680px;
+       margin-top: 80%;
+       >.container-col-p2 {
+        > .row-up{
+            width: 88%;
+            border-radius: 20px 20px 0px 0px;
+       }
+       > .row-down{
+        width: 88%;
+       
+       > .card-p2 > p{
+        font-size: 1rem;
+       }
+    }}}
+
+    .passion3 {
+        width: 88%;
+        margin-top: 100px;
+    
+    > .container-col-p3 {
+        
+    
+    > .column-left{
+        width: 88%; 
+    
+    > .card-p3 > p{
+        font-size: 1rem;
+        width: 100%;
     }
+}}}
+.projects{
+    margin-top: 60px;
+    >.projects-title >h2{
+        margin-top: 80px;
+    }
+}
+.contact > form > label{
+    margin-top: 3px;;
+}
+.contact > form > input, .contact > form > textarea{
+    width: 90%;
+}
     footer > .container-footer{
         >.column-left-footer{
             display: none;

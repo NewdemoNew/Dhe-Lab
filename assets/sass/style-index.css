@@ -989,6 +989,12 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   .first-line > .container-social > .social > a > img {
     height: 1.8rem;
   }
+  header {
+    height: 6%;
+  }
+  .hero {
+    height: 650px;
+  }
   .container-ham > .menu-ham > .menu-list {
     width: 155px;
   }
@@ -998,15 +1004,64 @@ footer > .container-footer > .column-center-footer > ul li > a:hover, footer > .
   }
   .container-main > .container-column-left > .container-img > img {
     margin-left: 20px;
+    max-width: 145%;
+    width: 145%;
+  }
+  .container-main > .container-column-right > .card-main {
+    width: 90%;
+  }
+  .container-main > .container-column-right > .card-main > .card-description > h2 {
+    font-size: 1.5rem;
   }
   .passion1 > .projects-title {
     margin-bottom: 23%;
   }
+  .passion1 > .container-col-p1 > .column-left {
+    width: 60%;
+    height: 33%;
+  }
   .passion1 > .container-col-p1 > .column-left > .container-grid {
     width: 64%;
   }
+  .passion1 > .container-col-p1 > .column-right > .row-up > .card-p1 > p {
+    font-size: 1rem;
+  }
   .passion2 {
-    height: 800px;
+    height: 680px;
+    margin-top: 80%;
+  }
+  .passion2 > .container-col-p2 > .row-up {
+    width: 88%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .passion2 > .container-col-p2 > .row-down {
+    width: 88%;
+  }
+  .passion2 > .container-col-p2 > .row-down > .card-p2 > p {
+    font-size: 1rem;
+  }
+  .passion3 {
+    width: 88%;
+    margin-top: 100px;
+  }
+  .passion3 > .container-col-p3 > .column-left {
+    width: 88%;
+  }
+  .passion3 > .container-col-p3 > .column-left > .card-p3 > p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .projects {
+    margin-top: 60px;
+  }
+  .projects > .projects-title > h2 {
+    margin-top: 80px;
+  }
+  .contact > form > label {
+    margin-top: 3px;
+  }
+  .contact > form > input, .contact > form > textarea {
+    width: 90%;
   }
   footer > .container-footer > .column-left-footer {
     display: none;
