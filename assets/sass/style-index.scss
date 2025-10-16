@@ -51,7 +51,7 @@ html{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    display: block; /* Nasconde il pulsante di default */
+    /* Nasconde il pulsante di default */
     z-index: 1000; /* Assicura che sia sopra gli altri elementi */
     transition: 0.5s ease-in-out; /* Transizione per l'apparizione */
     &:hover{
