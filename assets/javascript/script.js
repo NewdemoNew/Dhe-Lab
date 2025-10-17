@@ -18,3 +18,16 @@ alink.forEach(link=>{
    })
 });
 // ----------------------------------------------------------
+// cancellazione campi input e textarea dopo inserimento
+// const inp= document.querySelectorAll('input');
+// const area= document.querySelector('textarea');
+// const form=document.querySelector('form');
+
+// form.addEventListener('submit', ()=>{
+    
+//     inp.forEach(input => {   //inserisco ciclo for perche è una raccolta di query
+//         input.value = ""; 
+//     });
+//     area.value = "";
+// });
+// -----------------------------------------------------------
